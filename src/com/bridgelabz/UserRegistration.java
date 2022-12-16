@@ -68,11 +68,23 @@ public class UserRegistration {
 		System.out.println("Enter email id: ");
 		boolean b = Pattern.matches("[A-Za-z0-9]+[@][a-zA-Z]{3,15}[.][a-zA-Z]{2,3}", enter.next());
 		System.out.println(b);
+		System.out.println();
 
 //		checking if entered mobile number is valid or not
 		System.out.println("Enter mobile number followed by country code: ");
 		boolean b1=Pattern.matches("[1-9]{2}\s[0-9]{10}", enter.nextLine());
 		System.out.println(b1);
+		System.out.println();
+		
+		
+//		checking the entered password by user
+		
+//		password should contain at least 8 characters
+		System.out.println("Enter Password: ");
+		boolean b2= Pattern.matches("[a-zA-Z0-9]{8,}", enter.next());
+		System.out.println(b2);
+		System.out.println();
+		
 		
 	}
 
