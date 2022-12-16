@@ -61,12 +61,18 @@ public class UserRegistration {
 			System.out.println(lName + " is not valid");
 		}
 		*/
-//		checking if entered email is valid or not
+		
 		Scanner enter=new Scanner(System.in);
+		
+//		checking if entered email is valid or not
 		System.out.println("Enter email id: ");
 		boolean b = Pattern.matches("[A-Za-z0-9]+[@][a-zA-Z]{3,15}[.][a-zA-Z]{2,3}", enter.next());
 		System.out.println(b);
-		
+
+//		checking if entered mobile number is valid or not
+		System.out.println("Enter mobile number followed by country code: ");
+		boolean b1=Pattern.matches("[1-9]{2}\s[0-9]{10}", enter.nextLine());
+		System.out.println(b1);
 		
 	}
 
