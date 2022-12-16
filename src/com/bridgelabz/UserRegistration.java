@@ -82,6 +82,7 @@ public class UserRegistration {
 		password should contain at least 8 characters
  		password should contain atleast 1 upper case
  		password should contain atleast 1 numeric number
+ 		password should contain 1 special character
 		 */
 		
 		System.out.println("Enter Password: ");
