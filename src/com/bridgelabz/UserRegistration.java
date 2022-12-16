@@ -78,8 +78,10 @@ public class UserRegistration {
 		
 		
 //		checking the entered password by user
-		
-//		password should contain at least 8 characters
+		/*
+		password should contain at least 8 characters
+ 		password should contain atleast 1 upper case
+		 */
 		System.out.println("Enter Password: ");
 		boolean b2= Pattern.matches("[a-zA-Z0-9]{8,}", enter.next());
 		System.out.println(b2);
